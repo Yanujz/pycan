@@ -18,6 +18,22 @@ from pycan import ISOTP, UDS
 def bytearray2hex(d):
     return " ".join("{:02X}".format(x) for x in d)
 
+def recv(id):
+    ret = None
+
+    # Peripheral logic here
+
+    return ret
+
+def send(id, extended, fd, data):
+    print("CAN TX    {:02X}|{}|{}|{}".format(id,
+                                             "EXT" if extended else "NOEXT",
+                                             "FD" if fd else "NOFD",
+                                             bytearray2hex(data)))
+    # Peripheral logic here
+
+    return len(data)
+
 def main():
     isotp = ISOTP(recv=recv,
                   send=send, 
