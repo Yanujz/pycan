@@ -1,0 +1,46 @@
+site_name: "pycan"
+repo_name: "yanujz/pycan"
+repo_url: "https://github.com/Yanujz/pycan"
+
+theme:
+  name: material
+  icon:
+    repo: fontawesome/brands/git-alt 
+    edit: material/pencil 
+    view: material/eye
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    - navigation.top
+    - navigation.expand
+    - navigation.footer
+    - content.code.select
+
+
+nav:
+  - Home: index.md
+  - Protocols:
+    - iso14229/iso14229.md
+    - iso15765-2/iso15765-2.md
+
+plugins:
+  - search
+  - tags
+
+
+markdown_extensions:
+  - abbr
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.details
+  - admonition
+  - tables
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
