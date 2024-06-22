@@ -1,9 +1,3 @@
----
-hide:
-  - navigation
-  - toc
----
-
 # pycan
 
 A Python module for implementing a UDS (Unified Diagnostic Services) + ISO-TP (ISO 15765-2) stack for automotive diagnostics.
