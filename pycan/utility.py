@@ -87,7 +87,7 @@ class UDSServiceInfo:
 class UDSUtility:
     SID_INFO = {
         0x10: UDSServiceInfo(0x10, "DSC", "DiagnosticSessionControl", "DiagnosticSessionControl service is used to change diagnostic sessions in the server(s). In each diagnostic session, a different set of diagnostic services (and/or functionalities) is enabled in the server. The server shall always be in exactly one diagnostic session.",
-                             [UDSSubFunction(0x01, "DefaultSession", "Default Session"), UDSSubFunction(0x02, "ProgrammingSession", "Programming Session"), UDSSubFunction(0x03, "ExtendedSession", "Extended Session")]),
+                             [UDSSubFunction(0x01, "DefaultSession", "Default Session"), UDSSubFunction(0x02, "ProgrammingSession", "Programming Session"), UDSSubFunction(0x03, "ExtendedSession", "Extended Session"), UDSSubFunction(0x04, "SystemSafetyDiagnosticSession", "System Safety Diagnostic Session")]),
         0x11: UDSServiceInfo(0x11, "ER", "ECUReset", "ECUReset service is used by the client to request a server reset.",
                              [UDSSubFunction(0x00, "HardReset", "Perform a hard reset"), UDSSubFunction(0x01, "KeyOffOn", "Perform a key off/on reset"),
                               UDSSubFunction(0x02, "SoftReset", "Perform a soft reset"), UDSSubFunction(0x03, "EnableRapidPowerShutDown", "Enable rapid power shut down")]),
